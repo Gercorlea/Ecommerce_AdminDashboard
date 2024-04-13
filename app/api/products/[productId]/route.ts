@@ -21,7 +21,7 @@ export const GET = async (
         { status: 404 }
       );
     }
-    return NextResponse.json(JSON.stringify(product), {
+    return NextResponse.json(product, {
       status: 200,
       headers: {
         "Access-Control-Allow-Origin": `${process.env.ECCOMERCE_STORE_URL}`,
