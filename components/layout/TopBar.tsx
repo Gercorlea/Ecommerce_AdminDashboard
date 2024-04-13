@@ -45,7 +45,7 @@ const TopBar = () => {
             ))}
           </div>
         )}
-        <UserButton />
+        <UserButton afterSignOutUrl='/'/>
       </div>
     </div>
   );
