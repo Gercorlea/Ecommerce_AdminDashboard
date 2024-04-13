@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
     }
 
     const session = await stripe.checkout.sessions.create({
-      payment_method_types: ["card"],
+      payment_method_types: ["card", "paypal"],
       mode: "payment",
       shipping_address_collection: {
         allowed_countries: ["US", "CA"],
@@ -56,4 +56,4 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
