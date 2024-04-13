@@ -12,7 +12,6 @@ const Collections = () => {
     const router = useRouter()
   const [loading, setLoading] = useState(true);
   const [collections, setCollections] = useState([]);
-  console.log(collections)
 
   const getCollections = async () => {
     try {
