@@ -31,6 +31,7 @@ export const GET = async (
     });
   } catch (error) {
     console.log("[productId_GET]", error);
+    console.log(params.productId)
     return new NextResponse("Internal error", { status: 500 });
   }
 };
