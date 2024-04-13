@@ -2,7 +2,7 @@ import { DataTable } from "@/components/custom ui/DataTable";
 import { columns } from "@/components/orderItems/orderItemsColumns";
 
 const OrderDetails = async ({ params }: { params: { orderId: string } }) => {
-  const res = await fetch(`http://localhost:3001/api/orders/${params.orderId}`);
+  const res = await fetch(`/api/orders/${params.orderId}`);
 
   const { orderDetails, customer } = await res.json();
 
